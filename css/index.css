@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Sans-Serif', Arial;
+}
+
+.content {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #7dd9ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show {
+  position: absolute;
+  left: 80%;
+  top: 5%;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.score {
+  /* margin: 20px; */
+  margin-top: 10px;
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* 属性设置元素的堆叠顺序 大的在小的上面 */
+  z-index: 2;
+}
+
+.btn button {
+  background: none;
+  border: none;
+  background-size: 100% 100%;
+
+  cursor: pointer;
+  outline: none;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.startBtn button {
+  width: 200px;
+  height: 80px;
+  background-image: url(../images/startGame.png);
+  margin-left: -100px;
+  margin-top: -40px;
+}
+
+.pauseBtn {
+  display: none;
+}
+
+.pauseBtn button {
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/start.png);
+  margin-left: -35px;
+  margin-top: -35px;
+}
+
+#snakeWrap {
+  width: 600px;
+  height: 600px;
+  background: #225675;
+  position: relative;
+}
+
+.snakeHead {
+  background-image: url(../images/snake.png);
+  background-size: cover;
+}
+
+.snakeBody {
+  background-color: #9ddbb1;
+  border-radius: 50%;
+}
+.food {
+  background-image: url(../images/foodTemp.png);
+  background-size: cover;
+}
+.shit {
+  background-image: url(../images/shit.png);
+  background-size: cover
+}
+.hamburger {
+  background-image: url(../images/hamburger.png);
+  background-size: cover;
+}
+
+.show img {
+  width: 20%;
+  z-index: 3;
+}
+
+.show img:hover {
+  cursor: pointer;
+}
